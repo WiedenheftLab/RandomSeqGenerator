@@ -1,4 +1,4 @@
-#!/software/mambaforge/envs/Murat_scripts/bin/python
+#!/usr/bin/python
 
 from random import choice, shuffle, uniform
 import argparse
@@ -25,9 +25,9 @@ parser = argparse.ArgumentParser(prog='python RandomSeqGenerator.py',
 
         RandomSeqGenerator help:
 
-This script is developed to fetch sequences from multifasta file by using a list of accession numbers to fetch. 
+This script is developed to generate random DNA or RNA sequence based on user defined GC%. 
 
-SeqIO package from Bio is required to fetch sequences. Additionally, tqdm is required to provide a progress bar since some multifasta files can contain long and many sequences.
+tqdm is required to provide a progress bar since some multifasta files can contain long and many sequences.
         
 Syntax:
 
@@ -38,19 +38,19 @@ seq_fetch dependencies:
 	
 Input Paramaters (REQUIRED):
 ----------------------------
-	-n/--num		    number			Specify number of sequences to generate.
+	-n/--num		number		Specify number of sequences to generate.
 
-	-l/--len		    length			Specify number of sequences to generate.
+	-l/--len		length		Specify number of sequences to generate.
 
 	-gcf/--gc_fix		All GC%	        Specify desired gc content for all sequences (i.e., 0.5).
 	
 	-gcr/--gc_range		All GC%	        Specify desired gc content range (i.e., 0.4-0.5).
 	
-	-t/--type           Type            DNA or RNA.
+	-t/--type           	Type            DNA or RNA.
 	
 Basic Options:
 --------------
-	-h/--help		HELP			Shows this help text and exits the run.
+	-h/--help		HELP		Shows this help text and exits the run.
 
 	
       	'''))
