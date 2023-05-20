@@ -8,7 +8,7 @@ Associated lab: Wiedenheft lab
 
 This script is developed to generate random DNA or RNA sequence based on user defined GC%. 
 
-SeqIO package from Bio is required to fetch sequences. Additionally, tqdm is required to provide a progress bar since some multifasta files can contain long and many sequences.
+tqdm is required to provide a progress bar since some multifasta files can contain long and many sequences.
         
 Syntax:
 
